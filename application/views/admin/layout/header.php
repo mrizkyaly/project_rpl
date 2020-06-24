@@ -6,7 +6,7 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="<?php echo base_url() ?>admin/dasbor" class="nav-link">Admin Page</a>
+        <a href="<?php echo base_url() ?>admin/dasbor" class="nav-link">Admin Page | RPL</a>
       </li>
     </ul>
 
