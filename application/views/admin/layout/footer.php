@@ -17,7 +17,7 @@
     <div class="float-right d-none d-sm-block">
       <b>Theme By </b> <a href="http://adminlte.io">AdminLTE.io</a>
     </div>
-    <strong>Made With Luv</strong> by Me
+    <strong>Made With ❤</strong> by Kelompok RPL
   </footer>
 
   <!-- Control Sidebar -->

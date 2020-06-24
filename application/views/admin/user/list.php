@@ -26,7 +26,7 @@
 				<td><?php echo $user->username ?></td>
 				<td>
 					<a href="<?php echo base_url('admin/user/edit/'.$user->id_user) ?>" class="btn btn-warning btn-xs"><i class="fa fa-edit"></i> Edit</a>
-					<a href="<?php echo base_url('admin/user/delete/'.$user->id_user) ?>" class="btn btn-danger btn-xs" onclick="return confirm('Yakin ingin menghapus data ini ?')"><i class="fa fa-trash"></i> Delete</a>
+					<?php include('delete.php') ?>
 				</td>
 			</tr>
 		<?php $no++; } ?>
