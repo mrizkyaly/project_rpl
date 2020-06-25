@@ -27,6 +27,16 @@ class Produk_model extends CI_Model {
 		return $query->result();
 	}
 
+	// View all produk untuk transaksi
+	public function transaksi()
+	{
+		$this->db->select('*');
+		$this->db->from('pelanggan');
+		$this->db->order_by('id_pelanggan', 'asc');
+		$query = $this->db->get();
+		return $query->result();
+	}
+
 	// Detail produk
 	public function detail($id_produk)
 	{
