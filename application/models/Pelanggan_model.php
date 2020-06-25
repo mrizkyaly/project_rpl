@@ -29,6 +29,18 @@ class pelanggan_model extends CI_Model {
 		$query = $this->db->get();
 		return $query->row();
 	}
+
+	// login pealnggan
+	public function login($username,$password)
+	{
+		$this->db->select('*');
+		$this->db->from('pelanggan');
+		$this->db->where(array( 'username'	=> $username,
+								'password'	=> SHA1($password)));
+		$this->db->order_by('id_pelanggan', 'asc');
+		$query = $this->db->get();
+		return $query->row();
+	}
 	
 	// tambah data pelanggan
 	public function tambah($data)

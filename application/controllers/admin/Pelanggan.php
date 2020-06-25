@@ -115,7 +115,7 @@ class Pelanggan extends CI_Controller {
 							'nomor'					=>$i->post('nomor'),
 							'alamat'				=>$i->post('alamat'),
 							'username'				=>$i->post('username'),
-							'password'				=>$i->post('password')
+							'password'				=>SHA1($i->post('password'))
 						);
 			$this->pelanggan_model->edit($data);
 			$this->session->set_flashdata('sukses', 'Data telah diedit');

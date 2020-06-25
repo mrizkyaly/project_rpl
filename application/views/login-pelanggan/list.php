@@ -48,7 +48,7 @@
               }
 
               // form open login
-              echo form_open(base_url('login'));
+              echo form_open(base_url('loginpelanggan'));
             ?>
           </div>
           <div class="input-group mb-3">
