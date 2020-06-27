@@ -22,7 +22,7 @@ class Transaksi extends CI_Controller {
 		$this->load->view('admin/layout/wrapper', $data, FALSE);
 	}
 
-		// Delete transaksi
+	// Delete transaksi
 	public function delete($id_transaksi)
 	{
 		$data = array('id_transaksi'	=> $id_transaksi);
